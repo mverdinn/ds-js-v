@@ -1,10 +1,10 @@
 class Stack {
     constructor(){
         this.data = []
-        this.top = 5//stack size
+        this.top = 5         //stack size
     }
 
-    push(o){//validate stack not full
+    push(o){                  //validate stack not full
         if (this.isFull())
             console.log('full stack')
         else{
@@ -17,7 +17,7 @@ class Stack {
         return this.data[this.data.length-1]
     }
 
-    pop(){//validate stack not empty
+    pop(){                    //validate stack not empty
         if (this.isEmpty())
             console.log('empty stack')
         else
@@ -25,7 +25,7 @@ class Stack {
     }
 
     isEmpty(){
-        if (this.data.length === 0)//this.size()
+        if (this.data.length === 0)     //this.size()
             return true
         else
             return false
@@ -67,7 +67,7 @@ s.push(3)
 s.push(2)
 s.push(1)
 s.push(5)
-console.log(s.search(4));
+console.log(s.search(4))
 console.log('size',s.size())
 
 console.log(s.peek())

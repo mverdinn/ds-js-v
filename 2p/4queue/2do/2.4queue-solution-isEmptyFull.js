@@ -1,10 +1,10 @@
 class Stack {
   constructor() {
     this.data = []
-    this.top = 5//stack size
+    this.top = 5       //stack size
   }
 
-  push(o) {//validate stack not full
+  push(o) {             //validate stack not full
     if (this.isFull())
       console.log('full stack')
     else {
@@ -17,7 +17,7 @@ class Stack {
     return this.data[this.data.length - 1]
   }
 
-  pop() {//validate stack not empty
+  pop() {                              //validate stack not empty
     if (this.isEmpty())
       console.log('empty stack')
     else
@@ -25,7 +25,7 @@ class Stack {
   }
 
   isEmpty() {
-    if (this.data.length === 0)//this.size()
+    if (this.data.length === 0)                 //this.size()
       return true
     else
       return false
@@ -45,19 +45,21 @@ class Stack {
   search(k) {
     for (let i = 0; i < this.data.length; i++) {
       if (this.data[i] === k) {
-        return `Encontre el numero ${k} en el inidce ${i}`
+        return 'Encontré el número ${k} en el índice ${i}'
       }
     }
-    return `No encontre el numero ${k}`
+    return 'No encontré el número ${k}'
   }
 
 
-  // traverse(){}
+  traverse(){}
 
-  // toString(){}
+  toString(){}
+  
   makeEmpty() {
     this.data = []
   }
+  
 }
 
 let s = new Stack()

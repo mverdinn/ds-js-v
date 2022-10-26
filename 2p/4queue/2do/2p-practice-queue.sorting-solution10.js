@@ -1,7 +1,7 @@
-console.time("Tiempo: ")
+console.time('Tiempo: ')
 class Cola {
     constructor() {
-      this.cola =[]
+      this.cola = []
     }
     enqueue(element) {
       this.cola.push(element)
@@ -25,62 +25,62 @@ class Cola {
   
   }
   
-  let cola1 = new Cola();
+  let cola1 = new Cola()
   let cola2 = new Cola()
-  let numerosRandoms=10
-  let pasos=0;
-    for (let j = 0; j < numerosRandoms; j++) {
-        let numero = Math.floor(Math.random() * numerosRandoms);
-        let frontCola1;
-        let frontCola2;
-        let aux=0;
+  let numerosRandoms = 10      //cambia
+  let pasos = 0
+    for (let i = 0; i < numerosRandoms; i++) {
+        let numero = Math.floor(Math.random() * numerosRandoms)
+        let frontCola1
+        let frontCola2
+        let aux = 0
       
      
-    while(aux == 0){
-            if(cola1.empty == true){
-              cola1.enqueue(numero);
-            pasos++;
+    while (aux == 0){
+            if (cola1.empty == true){
+              cola1.enqueue(numero)
+            pasos++
             }
-             else{
-               if(numero >= cola1.front()){
-                frontCola1=cola1.front()
-               cola2.enqueue(frontCola1);
+             else {
+               if (numero >= cola1.front()){
+                frontCola1 = cola1.front()
+               cola2.enqueue(frontCola1)
                  pasos++
-                 cola1.dequeue();
-               pasos++;
+                 cola1.dequeue()
+               pasos++
                }
                
-               else{
-               cola2.enqueue(numero);
+               else {
+               cola2.enqueue(numero)
                  pasos++
-                 if(cola1.size() > 0){
-                 while(cola1.size() > 0){
-                    frontCola1=cola1.front()
-                 cola2.enqueue(frontCola1);
+                 if (cola1.size() > 0) {
+                 while (cola1.size() > 0) {
+                    frontCola1 = cola1.front()
+                 cola2.enqueue(frontCola1)
                    pasos++
-                   cola1.dequeue();
-                 pasos++;
+                   cola1.dequeue()
+                 pasos++
               }
                  pasos++
             } 
-                 aux++;
+                 aux++
                }
              }
            }
          
-             if(cola2.size() > 0){
-             while(cola2.size() > 0){
-                frontCola2=cola2.front()
-               cola1.enqueue(frontCola2);
+             if (cola2.size() > 0){
+             while (cola2.size() > 0){
+                frontCola2 = cola2.front()
+               cola1.enqueue(frontCola2)
                pasos++
-             cola2.dequeue();
-             pasos++;
+             cola2.dequeue()
+             pasos++
               }
-             pasos++;
+             pasos++
             } 
   
       }
       console.log(cola1.print())
-      console.timeEnd("Tiempo: ")
-      console.log("Número de pasos:" ,+pasos)
+      console.timeEnd('Tiempo: ')
+      console.log('Número de pasos:' ,+pasos)
      
