@@ -1,6 +1,7 @@
 //o2 hijos de -2 y 7
 
 function preorder(n){
+  //primero imprime, y despues busca left and right
   if (n!==null){
     console.log(n.d)
     preorder(n.l)
