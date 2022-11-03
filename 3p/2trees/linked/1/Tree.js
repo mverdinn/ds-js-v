@@ -4,10 +4,12 @@
 // preorder
 //
 
+
+
 function Node(o){
-    this.d=o//bject<->data
-    this.l=null//eft
-    this.r=null//ight
+    this.d=o       //object<->data
+    this.l=null    //left
+    this.r=null    //right
 }
 
 let p = new Node('+')
@@ -18,3 +20,5 @@ p.l = o1
 p.r = o2
 
 preorder(p)
+
+

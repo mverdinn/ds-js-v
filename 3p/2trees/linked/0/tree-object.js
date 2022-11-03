@@ -2,10 +2,14 @@
 binary tree
 */
 
+
+// l de left
+// r de right
+
 let root={
   d:'+',
-  l:null,//eft
-  r:null//ight
+  l:null,
+  r:null
  }
 
  let n1={
@@ -19,8 +23,6 @@ let root={
   l:null,
   r:null
  }
-
-
 
  root.l=n1
  root.r=n2
