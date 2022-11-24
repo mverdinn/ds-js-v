@@ -1,3 +1,12 @@
+
+// add two nodes
+// zee your notes
+//
+// then
+// call preorder
+// 
+
+
 //o2 hijos de -2 y 7
 
 function preorder(n){
