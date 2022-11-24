@@ -1,3 +1,7 @@
+//
+// dcomplab exercise
+// complete graph as matrix
+// 
 
 //grafo con peso
 let graph = [
