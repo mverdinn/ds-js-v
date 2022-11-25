@@ -1,16 +1,17 @@
 
 //1.Fibonacci
-function fibonacci(n) {
-    if (n <= 2){
-        return 1
-    }         
-    else{
-        return fibonacci(n-1) + fibonacci(n-2)
-    }
+let fibonacci = []
+fibonacci[0] = 1
+fibonacci[1] = 1
+for (let i = 2; i < 5; i++) {
+  fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1]
 }
+console.log("Fibonacci: ")
+console.log(fibonacci)
 
-console.log("Fibonacci: ");
-console.log(fibonacci(5))
+
+
+
 
 
 //2. Potencia
@@ -40,3 +41,5 @@ function factorial(n) {
 
 console.log("Factorial: ");
 console.log(factorial(3))
+
+
